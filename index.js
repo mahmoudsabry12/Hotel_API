@@ -14,7 +14,7 @@ dotenv.config()
 
  const connect = async ()=>{
     try {
-        await mongoose.connect(process.env.MONGO /* , {useNewUrlParser: false, useUnifiedTopology:false}*/);
+        await mongoose.connect(process.env.MONGO  , {useNewUrlParser: false, useUnifiedTopology:false});
         //console.log("Connected to MongoDB");
       } catch (error) {
         throw error;
