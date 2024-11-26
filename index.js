@@ -55,7 +55,11 @@ app.use(express.json())
   })
  })
 // const PORT = process.env.PORT || 8800
-app.listen(Number(process.env.PORT),"0.0.0.0", ()=>{
-    connect()
-    console.log("connected to backend");
+// app.listen(Number(process.env.PORT),"0.0.0.0", ()=>{
+//     connect()
+//     console.log("connected to backend");
+// })
+app.listen(Number(process.env.PORT) || 3000, "0.0.0.0", () => {
+  connect()
+  console.log("My server is now running!")
 })
