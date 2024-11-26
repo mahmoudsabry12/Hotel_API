@@ -55,7 +55,7 @@ app.use(express.json())
   })
  })
 const PORT = process.env.PORT || 8800
-app.listen(PORT, ()=>{
+app.listen(PORT,"0.0.0.0", ()=>{
     connect()
     console.log("connected to backend");
 })
