@@ -54,8 +54,8 @@ app.use(express.json())
     stack: err.stack
   })
  })
-
-app.listen(8800, ()=>{
+const PORT = process.env.PORT || 8800
+app.listen(PORT, ()=>{
     connect()
     console.log("connected to backend");
 })
